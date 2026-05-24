@@ -42,8 +42,13 @@ public class FlightService {
 
     /**
      * Maps a Flight entity to a FlightResponse DTO, including the computed availableSeats.
+     * Includes a defensive null check to prevent NullPointerException.
      */
     private FlightResponse mapToFlightResponse(Flight flight) {
+        if (flight == null) {
+            return null;
+        }
+        
         return FlightResponse.builder()
                 .flightNumber(flight.getFlightNumber())
                 .origin(flight.getOrigin())
