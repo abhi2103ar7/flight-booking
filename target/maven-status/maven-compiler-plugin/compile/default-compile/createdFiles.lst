@@ -1,4 +1,5 @@
 com/example/flightbooking/repository/BookingRepository.class
+com/example/flightbooking/service/FlightService.class
 com/example/flightbooking/FlightBookingApplication.class
 com/example/flightbooking/dto/BookingResponse.class
 com/example/flightbooking/model/Booking.class
@@ -16,3 +17,4 @@ com/example/flightbooking/model/Flight$FlightBuilder.class
 com/example/flightbooking/dto/BookingRequest$BookingRequestBuilder.class
 com/example/flightbooking/exception/OverbookingException.class
 com/example/flightbooking/exception/FlightNotFoundException.class
+com/example/flightbooking/service/BookingService.class
