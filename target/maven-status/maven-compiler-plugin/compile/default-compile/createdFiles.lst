@@ -1,1 +1,6 @@
 com/example/flightbooking/FlightBookingApplication.class
+com/example/flightbooking/model/Flight$FlightBuilder.class
+com/example/flightbooking/model/Booking.class
+com/example/flightbooking/model/Booking$BookingBuilder.class
+com/example/flightbooking/model/Flight.class
+com/example/flightbooking/model/Booking$BookingStatus.class
