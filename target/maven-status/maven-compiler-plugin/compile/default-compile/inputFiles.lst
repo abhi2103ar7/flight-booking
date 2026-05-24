@@ -1,3 +1,10 @@
 /Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/model/Flight.java
 /Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/FlightBookingApplication.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/dto/BookingRequest.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/dto/FlightResponse.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/exception/BookingNotFoundException.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/exception/OverbookingException.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/exception/InsufficientSeatsException.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/exception/FlightNotFoundException.java
 /Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/model/Booking.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/dto/BookingResponse.java
