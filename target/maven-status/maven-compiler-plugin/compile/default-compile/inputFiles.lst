@@ -13,4 +13,6 @@
 /Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/FlightBookingApplication.java
 /Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/service/BookingService.java
 /Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/exception/BookingNotFoundException.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/exception/GlobalExceptionHandler.java
 /Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/controller/BookingController.java
+/Users/abhishekranjan/Developer/Ebay/flight-booking/src/main/java/com/example/flightbooking/exception/ErrorResponse.java
