@@ -102,16 +102,8 @@ The application starts with the following 5 sample flights pre-loaded in memory 
 | **FL004** | Dallas (DFW) | San Francisco (SFO) | 200 |
 | **FL005** | Atlanta (ATL) | Denver (DEN) | 160 |
 
-## 7. Design Decisions
 
-### Thread-Safety & Overbooking Prevention
-To prevent race conditions where concurrent requests might overbook a flight, I implemented a robust synchronization mechanism:
-- **Per-Flight Locking**: Instead of using a fragile `synchronized(flight)` block (which fails if the object reference changes) or a global lock (which destroys throughput), I implemented a `ReentrantLock` keyed by `flightNumber`.
-- **Atomic Initialization**: The locks are managed in a `ConcurrentHashMap` and lazily initialized using the atomic `computeIfAbsent` method.
-- **Fair Ordering**: I used `new ReentrantLock(true)` to guarantee fair, FIFO-ordered lock acquisition, preventing thread starvation during high-traffic "flash sale" scenarios.
-- **Safe State Transitions**: The status checks for bookings (to prevent double-cancellations) are placed *inside* the lock to guarantee atomic compound check-and-act operations.
-
-## 8. What I Would Improve With More Time
+## 7. What I Would Improve With More Time
 
 If I had more time to expand this project for production readiness, I would implement:
 
@@ -123,3 +115,4 @@ If I had more time to expand this project for production readiness, I would impl
 - **Docker/Containerization Support**: Provide a `Dockerfile` and `docker-compose.yml` for seamless deployment.
 - **OpenAPI/Swagger Documentation**: Auto-generate interactive API documentation using `springdoc-openapi`.
 - **Idempotency Keys**: Add support for `Idempotency-Key` headers on booking creation to prevent duplicate bookings during network retries.
+
